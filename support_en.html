@@ -6,30 +6,55 @@
     <title>Company Profile | HANA JUNGJUN TECH</title>
     <style>
         body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #f0f2f5; }
+        /* 명함 로고 색상(#003D2B) 반영 */
         .brand-header { background-color: #003D2B; color: #fff; padding: 50px 20px; text-align: center; }
-        .container { max-width: 600px; margin: -30px auto 60px; background: #fff; padding: 40px 25px; border-radius: 16px; }
-        .btn-bmac { display: block; width: 100%; padding: 18px 0; background-color: #FFDD00; color: #000; text-align: center; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 16px; }
+        .container { max-width: 600px; margin: -30px auto 60px; background: #fff; padding: 40px 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .company-name { font-size: 22px; font-weight: bold; letter-spacing: 1px; }
+        .app-name { font-size: 16px; opacity: 0.8; margin-top: 5px; }
+        
+        .section { margin-top: 35px; }
+        .section h2 { font-size: 18px; color: #003D2B; border-bottom: 2px solid #003D2B; padding-bottom: 8px; margin-bottom: 15px; }
+        .content { font-size: 15px; color: #555; word-break: keep-all; }
+        
+        .btn-bmac { display: block; width: 100%; padding: 16px 0; background-color: #FFDD00; color: #000; text-align: center; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 16px; margin-top: 30px; transition: transform 0.2s; }
+        .btn-bmac:active { transform: scale(0.98); }
+        
+        .footer { text-align: center; font-size: 12px; color: #aaa; margin-top: 40px; }
     </style>
 </head>
 <body>
     <div class="brand-header">
+        <img src="logo.jpg" alt="HANA JUNGJUN LOGO" style="height: 50px; margin-bottom: 15px; border-radius: 8px;">
         <div class="company-name">HANA JUNGJUN TECH</div>
         <div class="app-name">Travel Diary Project</div>
     </div>
 
     <div class="container">
-        <h2>About Us</h2>
-        <p><strong>HANA JUNGJUN TECH</strong> connects human experiences through innovative data solutions. 'Travel Diary' is our vision for a digital memoir where every traveler can visualize their world journey.</p>
-        
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+        <div class="section">
+            <h2>About Us</h2>
+            <p class="content">
+                <strong>HANA JUNGJUN TECH</strong> connects human experiences through innovative data solutions. 'Travel Diary' is our vision for a digital memoir where every traveler can visualize their world journey in a beautiful way.
+            </p>
+        </div>
 
-        <h2>Support the Project</h2>
-        <p>If you enjoy using Travel Diary, please consider supporting us. Your contribution helps us maintain servers and keep the development going!</p>
-        <a href="https://buymeacoffee.com/hanajungjun" class="btn-bmac" target="_blank">☕️ Buy me a coffee</a>
+        <div class="section">
+            <h2>Behind the Scenes</h2>
+            <p class="content">
+                This project began with a simple passion for traveling and mapping. It has been a journey of countless hours of coding, fixing bugs, and improving map rendering. We are dedicated to creating the best experience for our users, fueled by curiosity and coffee.
+            </p>
+        </div>
         
-        <div style="margin-top: 50px; font-size: 13px; color: #999; text-align: center;">
+        <div class="section">
+            <h2>Support the Project</h2>
+            <p class="content">
+                If you enjoy using Travel Diary, please consider supporting us. Your contribution helps us maintain servers, cover API costs, and keep our developers motivated!
+            </p>
+            <a href="https://buymeacoffee.com/hanajungjun" class="btn-bmac" target="_blank">☕️ Buy me a coffee (Global Support)</a>
+        </div>
+
+        <div class="footer">
             <p>Contact: hanajungjun@gmail.com</p>
-            <p>&copy; 2026 HANA JUNGJUN TECH</p>
+            <p>&copy; 2026 HANA JUNGJUN TECH. All rights reserved.</p>
         </div>
     </div>
 </body>
