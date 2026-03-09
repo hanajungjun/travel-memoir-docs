@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항 | 여행일기 </title>
+    <title>공지사항 | 여행을담다</title>
     <style>
-        :root { --primary-color: #4A90E2; --text-color: #333; --bg-color: #f9f9f9; }
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        h1 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; font-size: 28px; }
-        .notice-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
-        .notice-item:last-child { border-bottom: none; }
-        .date { font-size: 13px; color: #888; display: block; margin-bottom: 5px; }
-        .title { font-weight: bold; font-size: 18px; color: #000; display: block; margin-bottom: 10px; }
-        .content { font-size: 15px; color: #555; }
-        .tag { display: inline-block; padding: 2px 8px; background: var(--primary-color); color: #fff; border-radius: 4px; font-size: 11px; margin-right: 8px; vertical-align: middle; }
+        :root { 
+            --primary-color: #7C4DFF; /* 형님 앱의 보라색 포인트 컬러 */
+            --text-color: #333; 
+            --bg-color: #f5f6fa; 
+        }
+        body { font-family: -apple-system, 'Apple SD Gothic Neo', sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 20px auto; padding: 30px; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        h1 { color: var(--primary-color); font-size: 24px; margin-bottom: 30px; padding-left: 5px; border-left: 4px solid var(--primary-color); }
+        .notice-item { margin-bottom: 25px; padding: 20px; border-radius: 12px; background: #fff; border: 1px solid #f0f0f0; transition: transform 0.2s; }
+        .notice-item:hover { transform: translateY(-2px); border-color: var(--primary-color); }
+        .date { font-size: 13px; color: #999; display: block; margin-bottom: 8px; }
+        .title { font-weight: bold; font-size: 17px; color: #111; display: block; margin-bottom: 10px; display: flex; align-items: center; }
+        .content { font-size: 14px; color: #666; margin: 0; word-break: keep-all; }
+        .tag { display: inline-block; padding: 3px 10px; background: var(--primary-color); color: #fff; border-radius: 6px; font-size: 11px; margin-right: 10px; font-weight: 500; }
+        .tag.new { background: #FF5252; } /* 새로운 소식 강조용 빨간 태그 */
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>공지사항</h1>
+        <h1>📢 새소식</h1>
+
+        <div class="notice-item">
+            <span class="date">2026.02.28</span>
+            <span class="title"><span class="tag new">🎉 OPEN</span> '여행을담다' 정식 출시 안내</span>
+            <p class="content">기다려주셔서 감사합니다! 드디어 '여행을담다'가 정식으로 서비스를 시작했습니다. 여러분의 소중한 여행 모험담을 이제 앱에서 기록해 보세요!</p>
+        </div>
 
         <div class="notice-item">
             <span class="date">2026.02.12</span>
-            <span class="title"><span class="tag">업데이트</span> IOS 출시 버전 빌드 완료!</span>
-            <p class="content">드디어 '여행일기' IOS 버전이 모든 준비를 마쳤습니다. 이제 곧 App Store에서 만나보실 수 있습니다. 기다려주셔서 감사합니다!</p>
+            <span class="title"><span class="tag">업데이트</span> iOS 버전 스토어 등록 준비 완료</span>
+            <p class="content">'여행을담다' iOS 버전이 빌드를 마치고 검토 단계에 들어갔습니다. 곧 App Store에서 만나보실 수 있도록 최선을 다하겠습니다.</p>
         </div>
 
         <div class="notice-item">
             <span class="date">2026.01.05</span>
-            <span class="title"><span class="tag">안내</span> 서비스 이용약관 및 개인정보 처리방침 개정</span>
-            <p class="content">더 나은 서비스 제공을 위해 이용약관이 개정되었습니다. 설정 메뉴의 법적 고지 섹션에서 상세 내용을 확인하실 수 있습니다.</p>
+            <span class="title"><span class="tag">안내</span> 서비스 이용약관 개정 안내</span>
+            <p class="content">더 나은 서비스 제공을 위해 이용약관이 개정되었습니다. [설정 > 법적 고지] 섹션에서 상세 내용을 확인하실 수 있습니다.</p>
         </div>
     </div>
 </body>
